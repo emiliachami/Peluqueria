@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería | Asistente virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <!-- Zona de chat -->
+        <section class="zona-chat" id="zona-chat">
+
+            <header class="encabezado">
+                <div class="logo">✂</div>
+                <div>
+                    <h1>Peluquería</h1>
+                    <p>Tu asistente virtual</p>
+                </div>
+                <span class="estado">● En línea</span>
+            </header>
+
+            <div class="mensajes" id="mensajes" aria-live="polite">
+                <div class="mensaje agente">
+                    <div class="burbuja">
+                        ¡Hola! Bienvenido/a a nuestra peluquería.
+                        ¿En qué podemos ayudarte hoy?
+                    </div>
+                    <span class="hora">Asistente virtual</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Zona de escritura -->
+        <section class="zona-escritura">
+
+            <form id="formulario">
+                <input
+                    type="text"
+                    id="entrada"
+                    placeholder="Escribí tu mensaje..."
+                    maxlength="500"
+                    autocomplete="off"
+                    aria-label="Escribí tu mensaje"
+                    required
+                >
+
+                <button type="submit" id="boton-enviar">
+                    Enviar
+                    <span>➤</span>
+                </button>
+            </form>
+
+            <p class="aclaracion">Estamos para ayudarte con tus turnos y consultas.</p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
